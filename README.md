@@ -226,3 +226,7 @@ B.Tech Artificial Intelligence & Machine Learning
 Symbiosis Institute of Technology, Pune
 
 
+## ⭐ Support
+
+If you like this project, consider starring the repository.
+
