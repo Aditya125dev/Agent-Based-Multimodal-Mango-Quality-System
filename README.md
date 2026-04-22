@@ -8,6 +8,8 @@ An intelligent AI-powered system for **mango quality assessment, ripeness predic
 
 [Click Here to Use the App](https://mango-quality-ai.streamlit.app)
 
+---
+
 ## 🚀 Project Overview
 
 This project uses **front-view image + back-view image + weight data** of Harumanis mangoes to automatically predict:
@@ -18,7 +20,7 @@ This project uses **front-view image + back-view image + weight data** of Haruma
 ✅ Recommended Market Price (INR + RM)  
 ✅ Shelf Life Estimate  
 ✅ Similar Mango Suggestions  
-✅ Buyer Insight Recommendation
+✅ Buyer Insight Recommendation  
 
 The system is built with an **Agentic AI Pipeline**, where multiple intelligent agents validate inputs, predict quality, and generate recommendations.
 
@@ -27,6 +29,7 @@ The system is built with an **Agentic AI Pipeline**, where multiple intelligent 
 ## 🧠 Key Features
 
 ### 🔍 Input Validation Agent
+
 Checks uploaded mango images for:
 
 - Blur detection  
@@ -35,6 +38,7 @@ Checks uploaded mango images for:
 - Same mango verification (front + back)
 
 ### 🤖 Prediction Agent
+
 Uses trained ML models for:
 
 - Ripeness Classification  
@@ -42,6 +46,7 @@ Uses trained ML models for:
 - Confidence Estimation
 
 ### 💰 Recommendation Agent
+
 Provides:
 
 - Price in INR  
@@ -53,9 +58,11 @@ Provides:
 ### 🌐 Dual Mode System
 
 #### 1️⃣ Requirement Mode
+
 User enters budget and preference.
 
 #### 2️⃣ Upload Mode
+
 User uploads mango images + weight for AI analysis.
 
 ---
@@ -74,7 +81,7 @@ User uploads mango images + weight for AI analysis.
 - Pandas  
 - Scikit-learn  
 - Matplotlib  
-- skimage  
+- scikit-image  
 - joblib
 
 ### ML Models Used
@@ -143,14 +150,16 @@ Features include:
 Agent-Based-Multimodal-Mango-Quality-System/
 │── app.py
 │── model.py
-│── pages/
+│── requirements.txt
+│── Harumanis_mango_weight_grade.xlsx
+│── README.md
+│── models/
+│── notebooks/
 │── images/
 │── screenshots/
-│── results/
-│── *.pkl
-│── datasets/
-│── notebooks/
-│── README.md
+│── sample_images/
+│   ├── normal_images/
+│   └── edge_cases/
 ```
 
 ## 📸 Screenshots
@@ -173,4 +182,47 @@ Agent-Based-Multimodal-Mango-Quality-System/
 
 ### Results
 ![Results](screenshots/results.png)
+
+## 🧪 Sample Test Images
+
+Use the images inside `sample_images/` to quickly test the deployed app.
+
+### 📁 Normal Images
+Located in:
+
+sample_images/normal_images/
+
+Includes front and back image pairs:
+
+- sample1_front.jpg + sample1_back.jpg
+- sample2_front.jpg + sample2_back.jpg
+- sample3_front.jpg + sample3_back.jpg
+
+### ⚠️ Edge Case Images
+Located in:
+
+sample_images/edge_cases/
+
+Includes robustness testing samples:
+
+- blur.jpeg
+- bright1.jpeg
+- nonbright.jpeg
+- rotated_sample.jpeg
+
+These help test performance under blur, brightness variation, and rotation.
+
+## ⚙️ Installation & Run Locally
+
+git clone https://github.com/Aditya125dev/Agent-Based-Multimodal-Mango-Quality-System.git
+cd Agent-Based-Multimodal-Mango-Quality-System
+pip install -r requirements.txt
+streamlit run app.py
+
+## 👨‍💻 Author
+
+Aditya Sengar
+B.Tech Artificial Intelligence & Machine Learning
+Symbiosis Institute of Technology, Pune
+
 
