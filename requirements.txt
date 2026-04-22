@@ -7,3 +7,4 @@ matplotlib
 joblib
 pillow
 openpyxl
+scikit-image
