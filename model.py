@@ -20,11 +20,11 @@ def hamming_distance(h1, h2):
 # ==========================
 # LOAD MODELS
 # ==========================
-rip_model = joblib.load("ripeness_model.pkl")
-grd_model = joblib.load("grade_model.pkl")
-scaler = joblib.load("scaler.pkl")
-rip_enc = joblib.load("ripeness_encoder.pkl")
-grd_enc = joblib.load("grade_encoder.pkl")
+rip_model = joblib.load("models/ripeness_model.pkl")
+grd_model = joblib.load("models/grade_model.pkl")
+scaler = joblib.load("models/scaler.pkl")
+rip_enc = joblib.load("models/ripeness_encoder.pkl")
+grd_enc = joblib.load("models/grade_encoder.pkl")
 
 
 # ==========================
