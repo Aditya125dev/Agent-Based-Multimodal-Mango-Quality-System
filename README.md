@@ -3,6 +3,9 @@
 An intelligent AI-powered system for **mango quality assessment, ripeness prediction, grade classification, price recommendation, and buyer decision support** using **computer vision, machine learning, multimodal learning, and agent-based workflow automation**.
 
 ---
+## Live Demo
+https://mango-quality-ai.streamlit.app
+
 
 ## 🚀 Project Overview
 
